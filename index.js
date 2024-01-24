@@ -25,5 +25,5 @@ app.use("/auth", authRoues)
 const PORT = process.env.PORT || 5000
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is started at port number ${process.env.PORT}`)
+    console.log(`Server is started at PORT ${process.env.PORT}`)
 })

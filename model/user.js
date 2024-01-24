@@ -1,3 +1,5 @@
+// this is user schema to check user activity
+
 import mongoose from 'mongoose';
 
 const UsersSchema = new mongoose.Schema({
