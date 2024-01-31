@@ -35,12 +35,6 @@ export const loginController = async (req, res) => {
   const { userEmail, userPass } = req.body;
   const isUserExist = await UserModel.findOne({ email: userEmail })
   if (isUserExist){
-
-    // res.json({
-    //   status: false,
-    //   message: 'User not found'
-    // });
-    // const isPasswordExist = await UserModel.findOne({ userPass: userPass })
     if(isUserExist.password === userPass){
 
       res.status(200).json({
